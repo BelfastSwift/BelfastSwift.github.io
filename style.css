@@ -1,5 +1,5 @@
 /* =============================================
-   BELFAST SWIFT — THEME DEFINITIONS
+   BelfastSwift — THEME DEFINITIONS
    Theme 1: Swift/Apple (dark, orange accent)
    Theme 4: Belfast (dark green, gold accent)
    ============================================= */
@@ -367,6 +367,7 @@ a.nav__logo {
 
 .hero__title-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: clamp(24px, 4vw, 56px);
     margin-bottom: 28px;
@@ -380,7 +381,7 @@ a.nav__logo {
 }
 
 .hero__title {
-    font-size: clamp(2.5rem, 12vw, 9rem);
+    font-size: clamp(2rem, 8vw, 6rem);
     font-weight: 900;
     letter-spacing: -0.04em;
     line-height: 0.92;
@@ -806,6 +807,12 @@ a.footer__logo {
     color: var(--accent);
 }
 
+.footer__social-link--luma {
+    width: auto;
+    padding: 0 14px;
+    border-radius: 100px;
+}
+
 .footer__bottom {
     text-align: center;
     color: var(--text-tertiary);
@@ -913,4 +920,51 @@ a.footer__logo {
     html {
         scroll-behavior: auto;
     }
+}
+
+/* Events */
+.events {
+    scroll-margin-top: 90px;
+}
+
+.event-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: clamp(24px, 5vw, 48px);
+    background: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius);
+}
+
+.event-card__label {
+    color: var(--accent);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.event-card h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 16px;
+}
+
+.event-card > p:not(.event-card__label) {
+    color: var(--text-secondary);
+}
+
+.event-card__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+}
+
+.event-card__details dt {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+}
+
+.event-card__details dd {
+    font-weight: 600;
 }

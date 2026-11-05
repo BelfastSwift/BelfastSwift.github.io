@@ -1,6 +1,6 @@
-# Belfast Swift
+# BelfastSwift
 
-The website for **Belfast Swift** — Belfast's iOS & Swift developer meetup community.
+The website for **BelfastSwift** — Belfast's iOS & Swift developer meetup community.
 
 🌐 **Live site:** [belfastswift.com](https://belfastswift.com) · [belfastswift.co.uk](https://belfastswift.co.uk) · [belfastswift.ie](https://belfastswift.ie)
 
